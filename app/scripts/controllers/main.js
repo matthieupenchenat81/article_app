@@ -8,12 +8,25 @@
  * Controller of the articleAppApp
  */
 angular.module('articleAppApp')
-  .controller('MainCtrl', function ($scope) {
+  .controller('MainCtrl', function ($scope, $state) {
 
-  	
-    $scope.awesomeThings = [
-      'HTML5 Boilerplate',
-      'AngularJS',
-      'Karma'
-    ];
+  	$scope.changeState = function(state) {
+        $state.go(state);
+    };
+
+    $scope.postsListByCategory = function(categoryId) {
+
+	    $state.go('index.postsCategory', {
+	      categoryId: categoryId
+	    });
+    };
+
+   $scope.readPost = function(categoryId ,postId) {
+
+   		$state.go('index.detailPost', {
+	      categoryId: categoryId,
+	      postId: postId
+	    });
+   };
+
   });
