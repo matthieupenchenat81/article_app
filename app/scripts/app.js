@@ -13,7 +13,8 @@ var myApp = angular
     'ngAnimate',
     'ngCookies',
     'ngResource',
-    'ui.router'
+    'ui.router',
+    'ui.bootstrap'
   ]);
 
 myApp.config(function($stateProvider, $urlRouterProvider) {
@@ -38,6 +39,10 @@ myApp.config(function($stateProvider, $urlRouterProvider) {
     .state('index.about', {
       url: "about",
       templateUrl: "views/about.html",
+    })
+    .state('index.signin', {
+      url: "signin",
+      templateUrl: "views/signin.html",
     })
     .state('index.new', {
       url: "newPost",

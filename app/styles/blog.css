@@ -11,7 +11,7 @@ html {
 .business-header {
 	margin-top: -20px;
     height: 400px;
-    background: url('http://placehold.it/1920x400') center center no-repeat scroll;
+    background: url('../images/wild.jpg') center center no-repeat scroll;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
@@ -36,9 +36,24 @@ html {
   width: 100%;
   /* Set the fixed height of the footer here */
   height: 70px;
-  background-color: #f5f5f5;
+  /*background-color: #f5f5f5;*/
 }
 
 .container .text-muted {
   margin: 20px 0;
+}
+
+.small-container {
+  width: auto;
+  max-width: 680px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+#myglyphcustom{
+ color:#F00;
+}
+
+.click {
+    cursor: pointer;
 }
