@@ -35,6 +35,10 @@ myApp.config(function($stateProvider, $urlRouterProvider) {
       url: "contact",
       templateUrl: "views/contact.html",
     })
+    .state('index.about', {
+      url: "about",
+      templateUrl: "views/about.html",
+    })
     .state('index.new', {
       url: "newPost",
       templateUrl: "views/new_post.html"
